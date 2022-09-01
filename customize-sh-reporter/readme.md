@@ -12,7 +12,7 @@ Parent directory of this file having a Dockerfile ,in which we are copying two f
 - customTemplate.tex
 - logo.png
 
->Note: In case we make any change ,still we need to keep customTemplate.tex & logo.png in dockerfile as it require for custmozination for our .
+>Note: In case we make any change ,still we need to keep customTemplate.tex & logo.png in dockerfile as it require for custmozination for our origination.
 
 > Note: When ready, simply use the Dockerfile to build the final image.
 
