@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{titling}
 \usepackage{hyperref}
+
 \hypersetup{
 colorlinks=true,
 linkcolor=blue,
@@ -33,14 +34,13 @@ urlcolor=blue
 \end{center}
 }
 \begin{document}
+\pagestyle{edbheader}
 \title{ \vspace{30mm} \sffamily \Huge [[.Title]] [[if .VariableValues]] \\ [[.VariableValues]] [[end]] [[if .Description]] \\
 \vspace{0.5cm} \rmfamily \Large [[.Description]] [[end]]}
 \date{[[.FromFormatted]]\vspace{0.25cm}\\to\\\vspace{0.25cm}[[.ToFormatted]]}
 \maketitle
-\thispagestyle{edbfooter}
 \newpage
 \begin{center}
-\thispagestyle{edbheader}
 [[range .Panels]][[if .IsPartialWidth]]\begin{minipage}{[[.Width]]\textwidth}
 \includegraphics[width=\textwidth]{image[[.Id]]}
 \end{minipage}
@@ -50,6 +50,5 @@ urlcolor=blue
 \par
 \vspace{0.5cm}
 [[end]][[end]]
-\thispagestyle{edbheader}
 \end{center}
 \end{document}
